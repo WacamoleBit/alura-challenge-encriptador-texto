@@ -1,0 +1,81 @@
+#procesador {
+    position: absolute;
+    left: 240px;
+    top: 168px;
+}
+
+#texto-ingresado {
+    width: 577px;
+    height: 48px;
+    
+    background-color: #F3F5FC;
+    color: #0A3871;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 32px;
+
+    border: none;
+}
+
+#texto-ingresado:focus {
+    outline: none;
+}
+
+#encriptar {
+    background-color: #0A3871;
+    color: #FFFFFF;
+
+    border-style: none;
+}
+
+#desencriptar {
+    background-color: #D8DFE8;
+    
+    border-color: #0A3871;
+}
+
+#consideracion {
+    width: 229px;
+    height: 18px;
+
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+
+    display: block;
+
+    position: absolute;
+    top: 505px;
+}
+
+.boton {
+    width: 328px;
+    height: 67px;
+    
+    border-radius: 24px;
+}
+
+.posicion-abajo {
+    /* bottom: 10lvh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 8px; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+
+    position: absolute;
+    top: 555px;
+}
+
+.texto-boton {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 800){
+    
+}

@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    background-color: #F3F5FC;
+}
+
+#logo {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}

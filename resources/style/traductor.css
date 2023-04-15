@@ -1,0 +1,38 @@
+#traductor {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+
+    width: 400px;
+    height: 844px;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#muneco {
+    position: relative;
+    width: 50%;
+    top: 170px;
+}
+
+#info-traductor {
+    position: relative;
+    top: 190px;
+}
+
+#destacado {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+#informativo {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
