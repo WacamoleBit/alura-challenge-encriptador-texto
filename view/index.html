@@ -13,9 +13,11 @@
 </head>
 <body>
     <img src="../resources/images/logo-alura.png" alt="logo-alura" id="logo">
-    <section id="contenedor-formulario">
-        <form id="procesador">
-            <input type="text" name="texto-ingresado" id="texto-ingresado" placeholder="Ingesa el texto aquí">
+    <section id="contenedor-procesador">
+        <div id="procesador">
+            <form>
+                <input type="text" name="texto-ingresado" id="texto-ingresado" placeholder="Ingesa el texto aquí">
+            </form>
             <div id="alinear-abajo">
                 <div>
                     <p id="consideracion"><img src="../resources/images/info-alura.png" alt="Consideración:"> Solo letras minúsculas y sin acentos</p>
@@ -23,10 +25,11 @@
                     <button id="desencriptar" class="boton texto-boton">Desencriptar</button>
                 </div>
             </div>
-        </form>
+        </div>
     </section>
     <section id="contenedor-traductor">
         <div id="traductor">
+            <p id="respuesta">Texto de respuesta</p>
             <img src="../resources/images/muneco.png" alt="Información" id="muneco">
             <p id="destacado">Ningún ensaje fue encontrado</p>
             <p id="informativo">Ingresa el texto que desees encriptar o desencriptar</p>

@@ -34,7 +34,6 @@
 
 #alinear-abajo {
     height: calc(100% - 140px);
-    /* margin-bottom: 100px; */
     
     position: relative;
     display: flex;

@@ -25,6 +25,19 @@
     border-radius: 32px;
 }
 
+#respuesta {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    top: 50px;
+
+    line-height: 150%;
+
+    color: #495057;
+    display: none;
+}
+
 #muneco {
     position: relative;
     width: 50%;
