@@ -1,11 +1,21 @@
+#contenedor-procesador {
+    float: left;
+    height: 100lvh;
+}
+
 #procesador {
     position: absolute;
-    left: 240px;
-    top: 168px;
+    height: calc(100% - 210px);
+    min-height: 470px;
+
+    margin-top: 168px;
+    margin-left: 240px;
+    
+    width: auto;
 }
 
 #texto-ingresado {
-    width: 577px;
+    width: calc(100% - 4px);
     height: 48px;
     
     background-color: #F3F5FC;
@@ -22,6 +32,27 @@
     outline: none;
 }
 
+#alinear-abajo {
+    height: calc(100% - 140px);
+    /* margin-bottom: 100px; */
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#consideracion {
+    position: relative;
+
+    width: 229px;
+    height: 18px;
+    
+
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+}
+
 #encriptar {
     background-color: #0A3871;
     color: #FFFFFF;
@@ -35,38 +66,12 @@
     border-color: #0A3871;
 }
 
-#consideracion {
-    width: 229px;
-    height: 18px;
-
-    font-size: 12px;
-    font-family: 'Inter', sans-serif;
-
-    display: block;
-
-    position: absolute;
-    top: 505px;
-}
 
 .boton {
     width: 328px;
     height: 67px;
     
     border-radius: 24px;
-}
-
-.posicion-abajo {
-    /* bottom: 10lvh;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    gap: 8px; */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 24px;
-
-    position: absolute;
-    top: 555px;
 }
 
 .texto-boton {
@@ -76,6 +81,3 @@
     font-family: 'Inter', sans-serif;
 }
 
-@media screen and (max-width: 800){
-    
-}

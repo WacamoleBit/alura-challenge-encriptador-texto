@@ -1,11 +1,23 @@
+#contenedor-traductor {
+    float: right;
+    height: 100lvh;
+}
+
 #traductor {
-    position: absolute;
-    top: 40px;
-    right: 100px;
+    position: relative;
+    width: 440px;
+    height: calc(100% - 280px);
+    min-height: 400px;
 
-    width: 400px;
-    height: 844px;
+    margin-top: 40px;
+    margin-right: 40px;
+    padding-top: 200px;
 
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    align-items: center;
+    
     text-align: center;
 
     background-color: #FFFFFF;
@@ -16,21 +28,17 @@
 #muneco {
     position: relative;
     width: 50%;
-    top: 170px;
-}
-
-#info-traductor {
-    position: relative;
-    top: 190px;
 }
 
 #destacado {
+    position: relative;
     font-size: 24px;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
 }
 
 #informativo {
+    position: relative;
     margin-left: 1em;
     margin-right: 1em;
     font-size: 16px;

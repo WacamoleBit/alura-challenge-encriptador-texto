@@ -8,22 +8,26 @@
     <link rel="stylesheet" href="../resources/style/background.css">
     <link rel="stylesheet" href="../resources/style/formulario.css">
     <link rel="stylesheet" href="../resources/style/traductor.css">
+    <script defer src="../script/indexController.js"></script>
+    <script defer src="../script/Encriptador.js"></script>
 </head>
 <body>
     <img src="../resources/images/logo-alura.png" alt="logo-alura" id="logo">
-    <section id="procesador">
-        <form>
-            <input type="text" name="texto-ingresado" id="texto-ingresado">
-            <p id="consideracion"><img src="../resources/images/info-alura.png" alt="Consideración:"> Solo letras minúsculas y sin acentos</p>
-            <div class="posicion-abajo">
-                <button id="encriptar" class="boton texto-boton">Encriptar</button>
-                <button id="desencriptar" class="boton texto-boton">Desencriptar</button>
+    <section id="contenedor-formulario">
+        <form id="procesador">
+            <input type="text" name="texto-ingresado" id="texto-ingresado" placeholder="Ingesa el texto aquí">
+            <div id="alinear-abajo">
+                <div>
+                    <p id="consideracion"><img src="../resources/images/info-alura.png" alt="Consideración:"> Solo letras minúsculas y sin acentos</p>
+                    <button id="encriptar" class="boton texto-boton">Encriptar</button>
+                    <button id="desencriptar" class="boton texto-boton">Desencriptar</button>
+                </div>
             </div>
         </form>
     </section>
-    <section id="traductor">
-        <img src="../resources/images/muneco.png" alt="Información" id="muneco">
-        <div id="info-traductor">
+    <section id="contenedor-traductor">
+        <div id="traductor">
+            <img src="../resources/images/muneco.png" alt="Información" id="muneco">
             <p id="destacado">Ningún ensaje fue encontrado</p>
             <p id="informativo">Ingresa el texto que desees encriptar o desencriptar</p>
         </div>
