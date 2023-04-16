@@ -13,7 +13,11 @@ btnEncriptar.addEventListener("click", () => {
 
     let respuesta = encriptador.encriptar(prepararTexto())
 
-    setRespuesta(respuesta)
+    if(respuesta.length != 0){
+        setRespuesta(respuesta)
+    } else {
+        mensajeNoEncontrado()
+    }
 })
 
 function prepararTexto() {
@@ -26,6 +30,13 @@ function limpiarTraductor() {
     muneco.style.display = "none"
     txtDescatado.style.display = "none"
     txtInformativo.style.display = "none"
+}
+
+function mensajeNoEncontrado() {
+    muneco.style.display = "block"
+    txtDescatado.style.display = "block"
+    txtInformativo.style.display = "block"
+    txtRespuesta.style.display = "none"
 }
 
 function setRespuesta(respuesta) {

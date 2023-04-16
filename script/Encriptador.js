@@ -2,37 +2,22 @@ class Encriptador {
     constructor () {}
 
     encriptar(cadena) {
+        const vocales = new Map([
+            ["a", "enter"],
+            ["e", "imes"],
+            ["i", "ai"],
+            ["o", "ober"],
+            ["u", "ufat"],
+        ])
+
         for (let posicion = 0; posicion < cadena.length; posicion++) {
             console.log(cadena)
-            if(cadena.at(posicion) == "a") {
-                let cifradoA = "enter";
 
-                cadena = this.aplicarCifrado(cifradoA, posicion, cadena)
-                posicion += (cifradoA.length)-1
-            }
-            if(cadena.at(posicion) == "e") {
-                let cifradoE = "imes";
+            let cifrado = vocales.get(cadena.at(posicion))
 
-                cadena = this.aplicarCifrado(cifradoE, posicion, cadena)
-                posicion += (cifradoE.length)-1
-            }
-            if(cadena.at(posicion) == "i") {
-                let cifradoI = "ai";
-
-                cadena = this.aplicarCifrado(cifradoI, posicion, cadena)
-                posicion += (cifradoI.length)-1
-            }
-            if(cadena.at(posicion) == "o") {
-                let cifradoO = "ober";
-
-                cadena = this.aplicarCifrado(cifradoO, posicion, cadena)
-                posicion += (cifradoO.length)-1
-            }
-            if(cadena.at(posicion) == "u") {
-                let cifradoU = "ufat";
-
-                cadena = this.aplicarCifrado(cifradoU, posicion, cadena)
-                posicion += (cifradoU.length)-1
+            if(cifrado !== undefined){
+                cadena = this.aplicarCifrado(cifrado, posicion, cadena)
+                posicion += (cifrado.length)-1
             }
         }
 

@@ -59,12 +59,19 @@
     border-style: none;
 }
 
+#encriptar:hover {
+    background-color: #072B61;
+}
+
 #desencriptar {
-    background-color: #D8DFE8;
+    background-color: #FFFFFF;
     
     border-color: #0A3871;
 }
 
+#desencriptar:hover {
+    background-color: #D8DFE8;
+}
 
 .boton {
     width: 328px;
