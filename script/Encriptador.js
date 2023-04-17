@@ -11,8 +11,6 @@ class Encriptador {
         ])
 
         for (let posicion = 0; posicion < cadena.length; posicion++) {
-            console.log(cadena)
-
             let cifrado = vocales.get(cadena.at(posicion))
 
             if(cifrado !== undefined){
