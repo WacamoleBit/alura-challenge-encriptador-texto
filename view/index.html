@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../resources/style/traductor.css">
     <script defer src="../script/indexController.js"></script>
     <script defer src="../script/Encriptador.js"></script>
+    <script defer src="../script/Desencriptador.js"></script>
 </head>
 <body>
     <img src="../resources/images/logo-alura.png" alt="logo-alura" id="logo">
@@ -22,7 +23,7 @@
                 <div>
                     <p id="consideracion"><img src="../resources/images/info-alura.png" alt="Consideración:"> Solo letras minúsculas y sin acentos</p>
                     <button id="encriptar" class="boton texto-boton">Encriptar</button>
-                    <button id="desencriptar" class="boton texto-boton">Desencriptar</button>
+                    <button id="desencriptar" class="desencriptar boton texto-boton">Desencriptar</button>
                 </div>
             </div>
         </div>
@@ -33,6 +34,13 @@
             <img src="../resources/images/muneco.png" alt="Información" id="muneco">
             <p id="destacado">Ningún ensaje fue encontrado</p>
             <p id="informativo">Ingresa el texto que desees encriptar o desencriptar</p>
+            <div id="contenedor-copiar">
+                <div class="alineado">
+                    <div>
+                        <button id="copiar" class="desencriptar boton texto-boton">Copiar</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>

@@ -6,7 +6,7 @@
 #procesador {
     position: absolute;
     height: calc(100% - 210px);
-    min-height: 470px;
+    min-height: 520px;
 
     margin-top: 168px;
     margin-left: 240px;
@@ -46,7 +46,6 @@
 
     width: 229px;
     height: 18px;
-    
 
     font-size: 12px;
     font-family: 'Inter', sans-serif;
@@ -63,13 +62,13 @@
     background-color: #072B61;
 }
 
-#desencriptar {
+.desencriptar {
     background-color: #FFFFFF;
     
     border-color: #0A3871;
 }
 
-#desencriptar:hover {
+.desencriptar:hover {
     background-color: #D8DFE8;
 }
 
