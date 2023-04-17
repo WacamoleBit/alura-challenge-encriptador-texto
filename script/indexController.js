@@ -35,7 +35,7 @@ btnDesencriptar.addEventListener("click", () => {
     }
 })
 
-btnCopiar.addEventListener("click", (evento) => {
+btnCopiar.addEventListener("click", () => {
     let text = txtRespuesta.textContent
 
     navigator.clipboard.writeText(text.toString()).then(() => {
