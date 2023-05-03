@@ -1,6 +1,5 @@
 #contenedor-procesador {
     float: left;
-    height: 100lvh;
 }
 
 #procesador {
@@ -75,6 +74,7 @@
 .boton {
     width: 328px;
     height: 67px;
+    margin-bottom: 20px;
     
     border-radius: 24px;
 }
@@ -86,3 +86,44 @@
     font-family: 'Inter', sans-serif;
 }
 
+@media screen and (max-width: 1390px) {
+    #procesador {
+        margin-left: 40px;
+        align-items: center;
+    }
+
+    #alinear-abajo {
+        height: calc(100% - 140px);
+        min-width: 660px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #procesador {
+        width: calc(100% - 80px);
+    }
+
+    #alinear-abajo {
+        display: flex;
+        flex-flow: column;
+        flex-direction: column;
+        align-items: center;
+        height: calc(100% - 140px);
+        min-width: 660px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #procesador {
+        height: min-content;
+    }
+
+    div {
+        display: grid;
+        align-items: center;
+    }
+
+    #alinear-abajo {
+        min-width: 100px;
+    }
+}
